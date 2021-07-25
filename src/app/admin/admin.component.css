@@ -1,0 +1,12 @@
+.cuerpo {
+    display:flex;
+}
+.izquierdo{
+    background-color: #f8f9fa;
+    flex: 3;
+    min-height: 90vh;
+}
+.derecho{
+    padding: 20px;
+  flex: 9;
+}

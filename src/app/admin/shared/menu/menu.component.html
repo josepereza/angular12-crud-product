@@ -1,0 +1,5 @@
+<ul class="list-group">
+    <li class="list-group-item"   [routerLink]="[item.ruta]"
+    routerLinkActive="active" *ngFor="let item of menu" aria-current="true">{{item.texto}}</li>
+    
+  </ul>

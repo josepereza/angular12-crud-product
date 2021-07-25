@@ -1,0 +1,16 @@
+
+
+
+<form [formGroup]="form" (ngSubmit)="submit()">
+    <div class="mb-3">
+      <label for="title" class="form-label">Titulo</label>
+      <input type="text" name="title" id="title" formControlName="title" class="form-control" 
+        placeholder="Titulo">
+    </div>
+    <div class="mb-3">
+      <label for="image" class="form-label">Imagen</label>
+      <input type="text" name="image" id="image" formControlName="image"class="form-control" 
+        placeholder="url-image">
+    </div>
+    <button type="submit" class="btn btn-primary">Agregar</button>
+  </form>

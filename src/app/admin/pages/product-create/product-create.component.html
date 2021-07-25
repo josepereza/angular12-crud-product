@@ -1,0 +1,13 @@
+<form #formularioProduct="ngForm" (ngSubmit)="agregar()">
+  <div class="mb-3">
+    <label for="title" class="form-label">Titulo</label>
+    <input [(ngModel)]="product.title" name="title" id="title" type="text" class="form-control" 
+      placeholder="Titulo">
+  </div>
+  <div class="mb-3">
+    <label for="image" class="form-label">Imagen</label>
+    <input [(ngModel)]="product.image" name="product.image" id="image" type="text" class="form-control" 
+      placeholder="url-image">
+  </div>
+  <button type="submit" class="btn btn-primary">Agregar</button>
+</form>
