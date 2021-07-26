@@ -27,5 +27,11 @@ return this.http.post(this.apiUrl,data)
   delete(id: number): Observable<void> {
     return this.http.delete<void>(`${this.apiUrl}/${id}`)
   }
-  
+  getList(nombre:string){
+    if (nombre.length>2){
+           return this.http.get<any[]>(`${this.apiUrl}?q=${nombre}`)
+
+    }else             return this.http.get<any[]>(this.apiUrl)
+
+  }
 }
